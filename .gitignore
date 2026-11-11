@@ -1,0 +1,31 @@
+# Virtual environments
+.venv/
+benchmarks/.venv-ref/
+
+# Python caches and build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# Large or scratch simulation output.
+# Small reference outputs that tests compare against are tracked, so data
+# formats such as .npz and .json are deliberately not ignored here.
+benchmarks/**/runs/
+*.gif
+*.mp4
+
+# Editor: keep only the shared settings
+.vscode/*
+!.vscode/settings.json
